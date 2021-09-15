@@ -35,10 +35,10 @@
       shadow-intensity="1" camera-orbit="265.3deg 56.1deg auto" interaction-prompt="none" camera-controls
        ar-scale="auto"  ar-modes="webxr scene-viewer quick-look" ar>
 
-      <button id="airoutlet" class="Hotspot" slot="hotspot-1"
-        data-position="-0.026475703867189494m 0.11740126003645392m 0.04554762273212867m"
-        data-normal="-0.2830956890814263m 0.9587674660493735m 0.02493545405193437m" 
-        data-visibility-attribute="visible">
+      <button id="dentalLight" class="Hotspot" slot="hotspot-1"
+      data-position="-1.0982877329295961m 1.5635724861728222m -0.10998611828382332m" 
+      data-normal="-0.9290169154442182m -0.3700372559863567m -7.732690838317362e-7m" 
+      data-visibility-attribute="visible">
       </button>
 
       <button id="Spo2" class="Hotspot" slot="hotspot-2"
@@ -91,32 +91,32 @@
       // Get the modal
       var modal = document.getElementById("myModal");
       
-      // Get the <span> element that closes the modal
+      
       var span = document.getElementsByClassName("close")[0];
 
-      var btn1 = document.getElementById("airoutlet");
-      // When the user clicks on the button, open the modal
+      var btn1 = document.getElementById("dentalLight");
+     
       btn1.onclick = function () {
         modal.style.display = "block";
-        console.log("Hello world!");
+      
         document.getElementById("demo").innerHTML = "Fix the mask to the air outlet of the device";
         document.getElementById('refimg').src = "assets/3a.jpg"
       }
 
       var btn2 = document.getElementById("Spo2");
-      // When the user clicks on the button, open the modal
+     
       btn2.onclick = function () {
         modal.style.display = "block";
-        console.log("Hello world!");
+       
         document.getElementById("demo").innerHTML = "Connect the SpO2 kit to the device to identify the SpO2 and pulse rate";
         document.getElementById('refimg').src = "assets/6.jpg"
       }
 
       var btn3 = document.getElementById("CoverButton");
-      // When the user clicks on the button, open the modal
+      
       btn3.onclick = function () {
         modal.style.display = "block";
-        console.log("Hello world!");
+        
         document.getElementById("demo").innerHTML = "Button to open Heated Humidifier H60 <br> Pull the water chamber out to fill the water";
         document.getElementById('refimg').src = "assets/4.jpg"
       }
@@ -125,7 +125,7 @@
       // When the user clicks on the button, open the modal
       btn4.onclick = function () {
         modal.style.display = "block";
-        console.log("Hello world!");
+        
         document.getElementById("demo").innerHTML = "Large 3.5 inch colour screen to view the real time reports";
         document.getElementById('refimg').src = "assets/1.jpg"
       }
@@ -133,8 +133,7 @@
       var btn5 = document.getElementById("Knob");
       // When the user clicks on the button, open the modal
       btn5.onclick = function () {
-        modal.style.display = "block";
-        console.log("Hello world!");
+        modal.style.display = "block";       
         document.getElementById("demo").innerHTML = "Air blowing Knob";
         document.getElementById('refimg').src = "assets/2.jpg"
       }
@@ -143,7 +142,7 @@
       // When the user clicks on the button, open the modal
       btn6.onclick = function () {
         modal.style.display = "block";
-        console.log("Hello world!");
+       
         document.getElementById("demo").innerHTML = "Power Supply";
         document.getElementById('refimg').src = "assets/5.jpg"
       }
